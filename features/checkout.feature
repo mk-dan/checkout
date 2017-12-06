@@ -14,3 +14,4 @@ Feature: Checkout
       | count | total |
       | 1     | 40    |
       | 2     | 80    |
+      | 3     | 120   |
