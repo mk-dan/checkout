@@ -14,7 +14,7 @@ public class CheckoutSteps {
   // set Checkout object
   Checkout checkout = new Checkout();
 
-@Given("^the price of a \"(.*?)\" is (\\d+)c$")
+@Given("^the price of a \"(.*?)\" is (\\d+)p$")
   public void thePriceOfAIsC(String name, int price) throws Throwable {
     // if-else statement
       if (name.equals("banana")) {
@@ -32,7 +32,7 @@ public class CheckoutSteps {
         checkout.add(itemCount, applePrice);
       }
   }
-@Then("^the total price should be (\\d+)c$")
+@Then("^the total price should be (\\d+)p$")
   public void theTotalPriceShouldBeC(int total) throws Throwable {
     // JUnit assertion
       assertEquals(total, checkout.total());
